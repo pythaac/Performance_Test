@@ -16,3 +16,7 @@ This test simply "enqueue" by MAXSIZE and "dequeue" by MAXSIZE, which is declare
 When the MAXSIZE is 10_000_000, the result is as follow:
 
 ![capture](/Array_vs_LinkedList_for_Queue/image/capture.PNG)
+
+1. Array is faster than LinkedList in enqueue.
+2. Array is faster than LinkedList in find.
+3. Array is faster than LinkedList in dequeue.
