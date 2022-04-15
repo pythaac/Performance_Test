@@ -52,10 +52,10 @@ public class Main {
 //        SecondLinkedListTest linkTest = new SecondLinkedListTest();
 //        linkTest.run();
 
-//        IssueTest issueTest = new IssueTest();
-//        issueTest.main();
+//        ChangedTest changedTest = new ChangedTest();
+//        changedTest.main();
 
-        ChangedTest changedTest = new ChangedTest();
-        changedTest.main();
+        ChangedTest2 changedTest2 = new ChangedTest2();
+        changedTest2.main();
     }
 }
