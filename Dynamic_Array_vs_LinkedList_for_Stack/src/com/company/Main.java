@@ -38,18 +38,18 @@ abstract class Test
     {
         final long start = System.currentTimeMillis();
 
-        final long start_enqueue = System.currentTimeMillis();
+        final long start_push = System.currentTimeMillis();
         this.push();
-        final long end_enqueue = System.currentTimeMillis();
+        final long end_push = System.currentTimeMillis();
 
-        final long start_dequeue = System.currentTimeMillis();
+        final long start_pop = System.currentTimeMillis();
         this.pop();
-        final long end_dequeue = System.currentTimeMillis();
+        final long end_pop = System.currentTimeMillis();
 
         final long end = System.currentTimeMillis();
 
-        System.out.println("push : "+ (end_enqueue - start_enqueue)/1000.0);
-        System.out.println("pop : "+ (end_dequeue - start_dequeue)/1000.0);
+        System.out.println("push : "+ (end_push - start_push)/1000.0);
+        System.out.println("pop : "+ (end_pop - start_pop)/1000.0);
         System.out.println("total : "+ (end - start)/1000.0);
     }
 }
