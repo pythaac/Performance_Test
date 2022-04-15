@@ -10,8 +10,8 @@ public class ChangedTest {
         LinkedList ll = new LinkedList();
 
         System.out.println("= 순차적으로 추가하기 =");
-        System.out.println("ArrayList : " + addl(al));
-        System.out.println("LinkedList : " + addl(ll));
+        System.out.println("ArrayList : " + add1(al));
+        System.out.println("LinkedList : " + add1(ll));
         System.out.println();
         System.out.println("= 중간에 추가하기 =");
         System.out.println("ArrayList : " + add2(al));
@@ -26,7 +26,7 @@ public class ChangedTest {
         System.out.println("LinkedList : " + remove1(ll));
     }
 
-    public static long addl(List list) {
+    public static long add1(List list) {
         long start = System.currentTimeMillis();
         for (int i = 0; i < 1000000; i++) {
             list.add(i+"");
