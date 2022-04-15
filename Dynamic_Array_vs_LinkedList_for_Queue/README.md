@@ -1,5 +1,6 @@
 # Dynamic Array vs LinkedList for Queue
-Dynamic array를 이용한 Queue와 LinkedList를 이용한 Queue의 간단한 속도 측정 테스트입니다.
+Dynamic array를 이용한 Queue와 LinkedList를 이용한 Queue의 간단한 속도 측정 테스트입니다.  
+&nbsp;  
 
 ### Description
 테스트는 enqueue, dequeue의 시간 측정입니다. _max_ 만큼 데이터를 enqueue하는 시간을 측정하고,
@@ -9,7 +10,8 @@ _max_ 만큼 데이터를 dequeue하는 시간을 측정합니다.
 - Dequeue : index 0를 pop하며, 나머지 데이터를 shift합니다.
 2. LinkedList  
 - Enqueue : Node를 생성하여 rear.next에 추가합니다.
-- Dequeue : head를 head.next로 변경합니다.
+- Dequeue : head를 head.next로 변경합니다.  
+&nbsp;  
 
 ### Conclusion
 _max_ 가 200_000일 때, 결과는 다음과 같습니다:  

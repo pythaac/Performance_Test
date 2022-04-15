@@ -1,5 +1,6 @@
 # Dynamic Array vs LinkedList for Stack
-Dynamic array를 이용한 Stack과 LinkedList를 이용한 Stack의 간단한 속도 측정 테스트입니다.
+Dynamic array를 이용한 Stack과 LinkedList를 이용한 Stack의 간단한 속도 측정 테스트입니다.  
+&nbsp;  
 
 ### Description
 테스트는 push, pop 시간 측정입니다. _max_ 만큼 데이터를 push 시간을 측정하고,
@@ -9,7 +10,8 @@ _max_ 만큼 데이터를 pop하는 시간을 측정합니다.
 - Pop : top을 pop하고 top--합니다.
 2. LinkedList  
 - Enqueue : Node를 생성하여 top을 rear.before에 추가하고, 현재 노드를 top으로 변경합니다.
-- Dequeue : top를 top.before로 변경합니다.
+- Dequeue : top를 top.before로 변경합니다.  
+&nbsp;  
 
 ### Conclusion
 _max_ 가 1_000_000일 때, 결과는 다음과 같습니다:  
