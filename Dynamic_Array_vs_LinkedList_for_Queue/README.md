@@ -13,7 +13,7 @@ _max_ 만큼 데이터를 dequeue하는 시간을 측정합니다.
 
 ### Conclusion
 _max_ 가 200_000일 때, 결과는 다음과 같습니다:  
-![capture](/image/capture.PNG)  
+![capture](./image/capture.PNG)  
 
 1. Enqueue  
 - Dynamic Array가 더 빠릅니다.
