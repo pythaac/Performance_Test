@@ -32,7 +32,6 @@ abstract class Test
     }
 
     abstract void enqueue();
-    abstract void find(int num);
     abstract void dequeue();
 
     public void run(int num)
@@ -43,10 +42,6 @@ abstract class Test
         this.enqueue();
         final long end_enqueue = System.currentTimeMillis();
 
-        long start_find = System.currentTimeMillis();
-        this.find(num);
-        long end_find = System.currentTimeMillis();
-
         final long start_dequeue = System.currentTimeMillis();
         this.dequeue();
         final long end_dequeue = System.currentTimeMillis();
@@ -54,7 +49,6 @@ abstract class Test
         final long end = System.currentTimeMillis();
 
         System.out.println("enqueue : "+ (end_enqueue - start_enqueue)/1000.0);
-        System.out.println("find (" + num + ") : "+ (end_find - start_find)/1000.0);
         System.out.println("dequeue : "+ (end_dequeue - start_dequeue)/1000.0);
         System.out.println("total : "+ (end - start)/1000.0);
     }
@@ -79,17 +73,6 @@ class LinkedListTest extends Test
             Node nw = new Node(i);
             crnt.setNext(nw);
             crnt=nw;
-        }
-    }
-
-    @Override
-    void find(int num)
-    {
-        Node crnt = head;
-        for(int i=0; i<max; i++)
-        {
-            if (crnt.val == num) break;
-            crnt = crnt.next;
         }
     }
 
@@ -127,15 +110,6 @@ class DynamicArrayTest extends Test
                 arr = nw_arr;
             }
             arr[rear++] = i;
-        }
-    }
-
-    @Override
-    void find(int num)
-    {
-        for(Integer i : arr)
-        {
-            if (i == num) break;
         }
     }
 
