@@ -16,7 +16,7 @@ _max_ 가 200_000일 때, 결과는 다음과 같습니다:
 ![capture](./image/capture.PNG)  
 
 1. Enqueue  
-- Dynamic Array가 더 빠릅니다.
+- Dynamic Array가 근소하게 빠릅니다.
 - Array의 크기 증가로 인한 copy 오버헤드에도 불구하고, LinkedList의 동적 할당 시간이 더 소요되는 듯 합니다.
 2. Dequeue  
 - LinkedList가 월등히 빠릅니다.
