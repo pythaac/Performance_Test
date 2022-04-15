@@ -46,10 +46,16 @@ abstract class Test
 public class Main {
 
     public static void main(String[] args) {
-        FirstDynamicArrayTest arrTest = new FirstDynamicArrayTest();
-        arrTest.run();
-        System.out.println();
-        SecondLinkedListTest linkTest = new SecondLinkedListTest();
-        linkTest.run();
+//        FirstDynamicArrayTest arrTest = new FirstDynamicArrayTest();
+//        arrTest.run();
+//        System.out.println();
+//        SecondLinkedListTest linkTest = new SecondLinkedListTest();
+//        linkTest.run();
+
+//        IssueTest issueTest = new IssueTest();
+//        issueTest.main();
+
+        ChangedTest changedTest = new ChangedTest();
+        changedTest.main();
     }
 }
