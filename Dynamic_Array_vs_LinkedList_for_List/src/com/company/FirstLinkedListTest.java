@@ -1,9 +1,31 @@
 package com.company;
 
+class FirstNode
+{
+    int val;
+    FirstNode next;
+
+    FirstNode(int val)
+    {
+        this.val = val;
+        this.next = null;
+    }
+
+    void setNext(FirstNode node)
+    {
+        this.next = node;
+    }
+
+    FirstNode popNode()
+    {
+        return next;
+    }
+}
+
 public class FirstLinkedListTest extends Test
 {
-    Node head = new Node(0);
-    Node rear = head;
+    FirstNode head = new FirstNode(0);
+    FirstNode rear = head;
 
     FirstLinkedListTest()
     {
@@ -15,7 +37,7 @@ public class FirstLinkedListTest extends Test
     {
         for(int i=1; i<max/2; i++)
         {
-            Node nw = new Node(i);
+            FirstNode nw = new FirstNode(i);
             rear.setNext(nw);
             rear=nw;
         }
@@ -26,7 +48,7 @@ public class FirstLinkedListTest extends Test
     {
         for(int idx : randIndex)
         {
-            Node nw = new Node(idx);
+            FirstNode nw = new FirstNode(idx);
             if (idx == 0)
             {
                 nw.setNext(head);
@@ -34,14 +56,14 @@ public class FirstLinkedListTest extends Test
             }
             else
             {
-                Node crnt = this.head;
+                FirstNode crnt = this.head;
                 for(int i=0; i<idx-1; i++)
                 {
                     crnt = crnt.next;
                 }
 
                 nw.setNext(crnt.next);
-                crnt.next = nw;
+                crnt.setNext(nw);
             }
         }
     }
@@ -51,7 +73,7 @@ public class FirstLinkedListTest extends Test
     {
         for(int idx : randIndex)
         {
-            Node crnt = this.head;
+            FirstNode crnt = this.head;
             for(int i=0; i<idx; i++)
             {
                 crnt = crnt.next;
@@ -61,7 +83,7 @@ public class FirstLinkedListTest extends Test
 
     @Override
     void print(){
-        Node crnt = this.head;
+        FirstNode crnt = this.head;
         while (crnt != null){
             System.out.print(crnt.val + " ");
             crnt = crnt.next;
