@@ -5,7 +5,7 @@
 &nbsp;  
 ___
 
-### 분석1: LinkedList의 탐색 
+### 분석1: LinkedList의 탐색 최적화
 Collection.LinkedList에서 삽입에 사용하는 [LinkedList의 add()](https://docs.oracle.com/javase/7/docs/api/java/util/LinkedList.html#add(int,%20E))를 보면 다음과 같이 구현되어 있으며,
 이를 통해 **탐색이 최대 N/2만큼 진행되는 것** 외에는 이전 테스트 insert 과정이 비슷해보입니다.
 
