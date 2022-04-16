@@ -5,7 +5,7 @@
 &nbsp;  
 ___
 
-### 분석1
+### 분석1: LinkedList의 탐색 
 Collection.LinkedList에서 삽입에 사용하는 [LinkedList의 add()](https://docs.oracle.com/javase/7/docs/api/java/util/LinkedList.html#add(int,%20E))를 보면 다음과 같이 구현되어 있으며,
 이를 통해 **탐색이 최대 N/2만큼 진행되는 것** 외에는 이전 테스트 insert 과정이 비슷해보입니다.
 
@@ -56,7 +56,7 @@ _max_ 가 100_000일 때, 결과는 다음과 같습니다:
 &nbsp;  
 ___
 
-### 분석2
+### 분석2: 테스트의 대상 인덱스
 Java의 정석에 나온 코드를 다시 살펴보니, 테스트가 다음과 같은 특징을 가지고 있습니다.
 - add1 : 1_000_000 개의 원소를 마지막 위치에 저장
 - add2 : **인덱스 500** 에 10_000번 원소를 삽입
