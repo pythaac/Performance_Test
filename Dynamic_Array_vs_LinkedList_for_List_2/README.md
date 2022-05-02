@@ -52,7 +52,7 @@ Node<E> node(int index) {
 _max_ 가 100_000일 때, 결과는 다음과 같습니다:  
 ![capture](./image/second.PNG)  
 
-아쉽지만 차이점이 보이지 않습니다. 위 Java의 정석 코드에서 Collection.LinkedList의 삽입 속도가 빠른 원인은 이 테스트에서 추가한 내용이 아닙니다.
+아쉽지만 차이점이 보이지 않습니다. 위 Java의 정석 코드에서 Collection.LinkedList의 삽입 속도가 빠른 원인은 **변경사항1**이 아닙니다.
 &nbsp;  
 ___
 
